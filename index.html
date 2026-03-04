@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbumes Pop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .max-w-\[1400px\]{
+                max-width: 1200px;
+            }
+    body{
+        overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+
+<div class="max-w-[1400px] mx-auto px-8 py-10">
+
+
+<header class="bg-white rounded-xl px-8 py-6 flex justify-between items-center shadow-sm border-b-2 border-violet-500">
+    <h1 class="text-3xl font-semibold tracking-wide text-gray-900">
+        Pop Albums
+    </h1>
+
+    <div class="flex gap-3">
+        <span class="w-4 h-4 rounded-full bg-violet-500"></span>
+        <span class="w-4 h-4 rounded-full bg-gray-300"></span>
+        <span class="w-4 h-4 rounded-full bg-gray-400"></span>
+    </div>
+</header>
+
+
+<section class="flex flex-wrap justify-center items-center gap-6 mt-12 mb-16">
+
+<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+    SOUR
+</button>
+
+<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+    GUTS
+</button>
+
+<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+    Emails I Can't Send
+</button>
+
+<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+    Short n' Sweet
+</button>
+
+<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+    Extras
+</button>
+
+</section>
+
+
+<section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center mb-20">
+
+<div onclick="openModal('sour')" class="cursor-pointer bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300">
+    <img src="img/Sour.jpg" class="w-28 h-28 mx-auto rounded-full object-cover">
+        <h3 class="mt-4 font-semibold text-lg">SOUR</h3>
+        <p class="text-sm text-gray-500">Olivia Rodrigo - 2021</p>
+    <small class="block mt-2 text-xs text-gray-500">
+            Álbum debut con letras emocionales que la llevaron al éxito mundial.
+    </small>
+</div>
+
+<div onclick="openModal('guts')" class="cursor-pointer bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300">
+    <img src="img/Guts.jpg" class="w-28 h-28 mx-auto rounded-full object-cover">
+    <h3 class="mt-4 font-semibold text-lg">GUTS</h3>
+    <p class="text-sm text-gray-500">Olivia Rodrigo - 2023</p>
+    <small class="block mt-2 text-xs text-gray-500">
+        Sonido más maduro con influencias rock y mucha energía.
+    </small>
+</div>
+
+<div onclick="openModal('emails')" class="cursor-pointer bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300">
+    <img src="img/eics.jpg" class="w-28 h-28 mx-auto rounded-full object-cover">
+    <h3 class="mt-4 font-semibold text-lg">Emails I Can't Send</h3>
+    <p class="text-sm text-gray-500">Sabrina Carpenter - 2022</p>
+    <small class="block mt-2 text-xs text-gray-500">
+        Un álbum personal con letras sinceras y estilo más íntimo.
+    </small>
+</div>
+
+<div onclick="openModal('short')" class="cursor-pointer bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300">
+    <img src="img/Short%20and%20sweet.jpg" class="w-28 h-28 mx-auto rounded-full object-cover">
+    <h3 class="mt-4 font-semibold text-lg">Short n' Sweet</h3>
+    <p class="text-sm text-gray-500">Sabrina Carpenter - 2024</p>
+        <small class="block mt-2 text-xs text-gray-500">
+            Pop elegante y divertido que consolidó su evolución musical.
+        </small>
+</div>
+
+</section>
+
+
+<section class="flex flex-col md:flex-row gap-12 items-start">
+
+
+<aside class="md:w-1/5">
+    <ul class="space-y-4">
+        <li class="bg-gray-200 hover:bg-violet-100 hover:-translate-y-0.5 transition duration-200 p-3 rounded-lg cursor-pointer text-sm hover:shadow-sm">
+            Drivers License
+        </li>
+        <li class="bg-gray-200 hover:bg-violet-100 hover:-translate-y-0.5 transition duration-200 p-3 rounded-lg cursor-pointer text-sm hover:shadow-sm">
+            Good 4 U
+        </li>
+        <li class="bg-gray-200 hover:bg-violet-100 hover:-translate-y-0.5 transition duration-200 p-3 rounded-lg cursor-pointer text-sm hover:shadow-sm">
+            Nonsense
+        </li>
+        <li class="bg-gray-200 hover:bg-violet-100 hover:-translate-y-0.5 transition duration-200 p-3 rounded-lg cursor-pointer text-sm hover:shadow-sm">
+            Feather
+        </li>
+    </ul>
+</aside>
+
+<div class="md:w-3/5 bg-white rounded-xl p-8 shadow-sm">
+    <h2 class="text-2xl font-semibold text-violet-600 mb-6">
+        Olivia Rodrigo & Sabrina Carpenter
+    </h2>
+
+<img src="https://s.yimg.com/ny/api/res/1.2/D6o43T2i3632yVqmY0rR8g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg7Y2Y9d2VicA--/https://media.zenfs.com/en/people_218/fcb196b2a988bfdcc3fddb13bbbf75d7"
+class="w-full rounded-lg mb-6">
+
+<p class="mb-4 leading-relaxed text-justify">
+    <strong>Olivia Rodrigo</strong><br>
+        Comenzó su carrera como actriz antes de convertirse en una de las artistas pop más importantes de su generación. 
+        Su álbum debut <em>SOUR</em> destacó por canciones sobre desamor y crecimiento personal.
+</p>
+
+<p class="mb-4 leading-relaxed text-justify">
+    Con <em>GUTS</em>, Olivia mostró una versión más madura y rockera, explorando temas como inseguridades y fama.
+</p>
+
+<p class="leading-relaxed text-justify">
+    <strong>Sabrina Carpenter</strong><br>
+        Evolucionó hacia un pop más sofisticado. 
+        <em>Emails I Can't Send</em> mostró una faceta íntima, mientras que 
+        <em>Short n' Sweet</em> consolidó su estilo moderno y fresco.
+</p>
+</div>
+
+
+<aside class="md:w-[22%] bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+    <h2 class="text-lg font-semibold text-center text-violet-600 mb-6 tracking-wide">
+        Ingreso
+    </h2>
+
+    <form class="space-y-5">
+        <input type="text" placeholder="Usuario" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+        <input type="password" placeholder="Contraseña" class="w-full px-3 py-2 border border-gray-300 rounded-lg">
+        <button class="w-full py-2.5 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition">
+            Enviar
+        </button>
+    </form>
+</aside>
+
+</section>
+</div>
+
+<!-- ================= MODALES ================= -->
+
+<div id="sour" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-xl p-6 w-[90%] md:w-[500px] relative">
+        <button onclick="closeModal('sour')" class="absolute top-3 right-3 text-xl">&times;</button>
+        <h2 class="text-xl font-semibold mb-4 text-violet-600">SOUR</h2>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6s84u2TUpR3wdUv4NgKA2j?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
+
+<div id="guts" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-xl p-6 w-[90%] md:w-[500px] relative">
+        <button onclick="closeModal('guts')" class="absolute top-3 right-3 text-xl">&times;</button>
+        <h2 class="text-xl font-semibold mb-4 text-violet-600">GUTS</h2>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1xJHno7SmdVtZAtXbdbDZp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
+
+<div id="emails" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-xl p-6 w-[90%] md:w-[500px] relative">
+        <button onclick="closeModal('emails')" class="absolute top-3 right-3 text-xl">&times;</button>
+        <h2 class="text-xl font-semibold mb-4 text-violet-600">Emails I Can't Send</h2>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5kDmlA2g9Y1YCbNo2Ufxlz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
+
+<div id="short" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-xl p-6 w-[90%] md:w-[500px] relative">
+        <button onclick="closeModal('short')" class="absolute top-3 right-3 text-xl">&times;</button>
+        <h2 class="text-xl font-semibold mb-4 text-violet-600">Short n' Sweet</h2>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3iPSVi54hsacKKl1xIR2eH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
+
+<script>
+    function openModal(id){
+        document.getElementById(id).classList.remove("hidden");
+        document.getElementById(id).classList.add("flex");
+    }
+    function closeModal(id){
+        document.getElementById(id).classList.add("hidden");
+        document.getElementById(id).classList.remove("flex");
+    }
+</script>
+
+<footer class="mt-20 bg-white border-t text-gray-600 text-center py-6">
+    © Todos los derechos reservados
+</footer>
+
+    </body>
+</html>
