@@ -10,31 +10,9 @@
             .max-w-\[1400px\]{
                 max-width: 1200px;
             }
-            body{
-                overflow-x: hidden;
-            }
+        body{
+            overflow-x: hidden;
         }
-        /* Ajustes para móviles */
-        @media screen and (max-width: 768px) {
-            .max-w-[1400px] {
-                padding-left: 1rem; /* 16px */
-                padding-right: 1rem; /* 16px */
-                padding-top: 1.5rem; /* 24px */
-                padding-bottom: 1.5rem; /* 24px */
-            }
-            img.w-28.h-28 {
-                width: 6rem; /* 96px */
-                height: 6rem; /* 96px */
-            }
-            h3.text-lg {
-                font-size: 1rem; /* 16px */
-            }
-            p.text-sm {
-                font-size: 0.875rem; /* 14px */
-            }
-            small.text-xs {
-                font-size: 0.75rem; /* 12px */
-            }
         }
     </style>
 </head>
@@ -42,7 +20,6 @@
 <body class="bg-gray-50 font-sans text-gray-800">
 
 <div class="max-w-[1400px] mx-auto px-8 py-10">
-
 
 <header class="bg-white rounded-xl px-8 py-6 flex justify-between items-center shadow-sm border-b-2 border-violet-500">
     <h1 class="text-3xl font-semibold tracking-wide text-gray-900">
@@ -56,40 +33,38 @@
     </div>
 </header>
 
+<!-- ===== BOTONES ===== -->
+<section class="flex flex-wrap justify-center items-center gap-4 mt-12 mb-16">
+    <button class="flex-1 min-w-[120px] sm:min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+        SOUR
+    </button>
 
-<section class="flex flex-wrap justify-center items-center gap-6 mt-12 mb-16">
+    <button class="flex-1 min-w-[120px] sm:min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+        GUTS
+    </button>
 
-<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
-    SOUR
-</button>
+    <button class="flex-1 min-w-[120px] sm:min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+        Emails I Can't Send
+    </button>
 
-<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
-    GUTS
-</button>
+    <button class="flex-1 min-w-[120px] sm:min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+        Short n' Sweet
+    </button>
 
-<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
-    Emails I Can't Send
-</button>
-
-<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
-    Short n' Sweet
-</button>
-
-<button class="min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
-    Extras
-</button>
-
+    <button class="flex-1 min-w-[120px] sm:min-w-[180px] px-6 py-2.5 border-2 border-violet-500 text-violet-600 font-semibold rounded-lg text-sm tracking-wide transition-all duration-300 ease-in-out hover:bg-violet-600 hover:text-white hover:shadow-lg hover:-translate-y-1 active:scale-95">
+        Extras
+    </button>
 </section>
 
-
-<section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center mb-20">
+<!-- ===== ÁLBUMES ===== -->
+<section class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 text-center mb-20">
 
 <div onclick="openModal('sour')" class="cursor-pointer bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300">
     <img src="img/Sour.jpg" class="w-28 h-28 mx-auto rounded-full object-cover">
-        <h3 class="mt-4 font-semibold text-lg">SOUR</h3>
-        <p class="text-sm text-gray-500">Olivia Rodrigo - 2021</p>
+    <h3 class="mt-4 font-semibold text-lg">SOUR</h3>
+    <p class="text-sm text-gray-500">Olivia Rodrigo - 2021</p>
     <small class="block mt-2 text-xs text-gray-500">
-            Álbum debut con letras emocionales que la llevaron al éxito mundial.
+        Álbum debut con letras emocionales que la llevaron al éxito mundial.
     </small>
 </div>
 
@@ -115,18 +90,17 @@
     <img src="img/Short%20and%20sweet.jpg" class="w-28 h-28 mx-auto rounded-full object-cover">
     <h3 class="mt-4 font-semibold text-lg">Short n' Sweet</h3>
     <p class="text-sm text-gray-500">Sabrina Carpenter - 2024</p>
-        <small class="block mt-2 text-xs text-gray-500">
-            Pop elegante y divertido que consolidó su evolución musical.
-        </small>
+    <small class="block mt-2 text-xs text-gray-500">
+        Pop elegante y divertido que consolidó su evolución musical.
+    </small>
 </div>
 
 </section>
 
+<!-- ===== LISTA + CONTENIDO + LOGIN ===== -->
+<section class="flex flex-col sm:flex-col md:flex-row gap-6 md:gap-12 items-start">
 
-<section class="flex flex-col md:flex-row gap-12 items-start">
-
-
-<aside class="md:w-1/5">
+<aside class="w-full sm:w-full md:w-1/5">
     <ul class="space-y-4">
         <li class="bg-gray-200 hover:bg-violet-100 hover:-translate-y-0.5 transition duration-200 p-3 rounded-lg cursor-pointer text-sm hover:shadow-sm">
             Drivers License
@@ -143,7 +117,7 @@
     </ul>
 </aside>
 
-<div class="md:w-3/5 bg-white rounded-xl p-8 shadow-sm">
+<div class="w-full sm:w-full md:w-3/5 bg-white rounded-xl p-8 shadow-sm">
     <h2 class="text-2xl font-semibold text-violet-600 mb-6">
         Olivia Rodrigo & Sabrina Carpenter
     </h2>
@@ -169,8 +143,7 @@ class="w-full rounded-lg mb-6">
 </p>
 </div>
 
-
-<aside class="md:w-[22%] bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<aside class="w-full sm:w-full md:w-[22%] bg-white rounded-xl p-8 shadow-sm border border-gray-100">
     <h2 class="text-lg font-semibold text-center text-violet-600 mb-6 tracking-wide">
         Ingreso
     </h2>
@@ -188,7 +161,6 @@ class="w-full rounded-lg mb-6">
 </div>
 
 <!-- ================= MODALES ================= -->
-
 <div id="sour" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
     <div class="bg-white rounded-xl p-6 w-[90%] md:w-[500px] relative">
         <button onclick="closeModal('sour')" class="absolute top-3 right-3 text-xl">&times;</button>
