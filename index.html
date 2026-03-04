@@ -10,8 +10,30 @@
             .max-w-\[1400px\]{
                 max-width: 1200px;
             }
-    body{
-        overflow-x: hidden;
+            body{
+                overflow-x: hidden;
+            }
+        }
+        /* Ajustes para móviles */
+        @media screen and (max-width: 768px) {
+            .max-w-[1400px] {
+                padding-left: 1rem; /* 16px */
+                padding-right: 1rem; /* 16px */
+                padding-top: 1.5rem; /* 24px */
+                padding-bottom: 1.5rem; /* 24px */
+            }
+            img.w-28.h-28 {
+                width: 6rem; /* 96px */
+                height: 6rem; /* 96px */
+            }
+            h3.text-lg {
+                font-size: 1rem; /* 16px */
+            }
+            p.text-sm {
+                font-size: 0.875rem; /* 14px */
+            }
+            small.text-xs {
+                font-size: 0.75rem; /* 12px */
             }
         }
     </style>
@@ -214,5 +236,5 @@ class="w-full rounded-lg mb-6">
     © Todos los derechos reservados
 </footer>
 
-    </body>
+</body>
 </html>
